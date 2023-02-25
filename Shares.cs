@@ -18,12 +18,12 @@ public static int [] Array (int size) //Заполняем массив случ
 return array;
 }
 
-public static int [] ArrayRandom (int sizeRandom) //Заполняем массив случайными числами
+public static int [] ArrayRandom (int sizeRandom) //Заполняем массив случайными числами от 1 до 100
 {
     int [] array = new int [sizeRandom];
     for (int i = 0; i<sizeRandom; i++)
     {
-        array [i] = new Random().Next(100, 1000);
+        array [i] = new Random().Next(1, 100);
         Console.Write (array[i]+ " ");
     }
 return array;
